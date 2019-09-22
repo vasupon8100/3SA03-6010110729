@@ -12,6 +12,7 @@ class App extends Component {
     window.location.reload(false);
   }
   render() {
+    
     return (
       <div className= "App">
         <h1 className="welcom">Let's Have Fun</h1>

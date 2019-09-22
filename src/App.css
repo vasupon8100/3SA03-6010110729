@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: aqua;
+  background-color: rgb(236, 240, 6);
+  font-family:'Hey August';
 }
 
 .App-logo {
