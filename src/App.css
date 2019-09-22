@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgb(236, 240, 6);
+  
   font-family:'Hey August';
 }
 
@@ -11,7 +11,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #070707;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,14 +31,14 @@
   text-align: center;
   width: 3em;
   font-size: 2em;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgb(219, 217, 217);
   margin: 1em;
   user-select: none;
 }
 
 .activeCard {
   color: rgba(219, 209, 59, 0.884);
-  background: rgb(5, 3, 4);
+  background: rgb(8, 8, 8);
 }
 
 @keyframes App-logo-spin {
@@ -49,3 +49,8 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background:url("https://cdn.pixabay.com/photo/2017/07/25/11/44/crumpled-2537807_1280.jpg")
+  
+}
+

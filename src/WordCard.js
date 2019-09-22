@@ -45,8 +45,22 @@ Component {
     }
     render() {
         if(this.props.requestHint){
-            this.props.getHint(this.state.chars)
+            var a;
+            var lenghtstring = 0;
+            var stringword = " ";
+            for(a in this.state.chars){
+                lenghtstring++;
+            }
+            lenghtstring = lenghtstring/2;
+            lenghtstring=lenghtstring.toFixed(0);
+            for(a = 0; a < lenghtstring; a++)
+            {
+                stringword += this.state.chars[a]
+        
+            }
+            this.props.getHint(stringword)
         }
+        
         return (
             <div>
                 { Array.from(this.props.value).map((c, i) =><CharacterCard value={c} key={i} activationHandler={this.activationHandler}/>) }
