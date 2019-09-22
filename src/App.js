@@ -3,7 +3,7 @@ import './App.css';
 import WordCard from './WordCard';
 
 
-const word = ['Heineken','Federbrau','Singha']
+const word = ['EASY','NORMOL','HARDCORE']
 var item = word[Math.floor(Math.random()*word.length)];
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className= "App">
-        <h1 className="welcom"> Let To Play Game</h1>
+        <h1 className="welcom">Let's Have Fun</h1>
 
         <WordCard value={item.toUpperCase()}/>
         <h1 id="result"></h1>
