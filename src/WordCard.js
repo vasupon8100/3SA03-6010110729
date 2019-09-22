@@ -44,6 +44,9 @@ Component {
         }
     }
     render() {
+        if(this.props.requestHint){
+            this.props.getHint(this.state.chars)
+        }
         return (
             <div>
                 { Array.from(this.props.value).map((c, i) =><CharacterCard value={c} key={i} activationHandler={this.activationHandler}/>) }
