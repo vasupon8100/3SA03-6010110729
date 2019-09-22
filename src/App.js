@@ -21,7 +21,7 @@ class App extends Component {
     this.setState({requestHint: true});
   }
   getHint = (chars) =>{
-    document.getElementById('hint').innerHTML = chars
+    document.getElementById('hints').innerHTML = `Hint : ${chars}`
   }
   render() {
     
@@ -35,8 +35,8 @@ class App extends Component {
         <button id="newgame" className="button" onClick={this.newgame}>New Game</button>
         <br></br><br></br>
         <button id ="hint" className = "button" onClick={this.requestHint}>Hint</button>
-        <br></br><br></br>
-        <div id="hint"></div>
+        <br></br>
+        <p id ="hints"></p>
       </div>
       
     );
