@@ -21,7 +21,10 @@ class App extends Component {
     this.setState({requestHint: true});
   }
   getHint = (chars) =>{
-    document.getElementById('hints').innerHTML = `Hint : ${chars}`
+    document.getElementById('hints').innerHTML = `Hint : ${chars}`;
+  }
+  getAnswer = (answer) => {
+    document.getElementById('complete').innerHTML = `Answer : ${answer}`;
   }
   render() {
     
@@ -30,8 +33,12 @@ class App extends Component {
         <h1 className="welcom">Let's Have Fun</h1>
         <h2 id="close"></h2>
 
-        <WordCard value={item.toUpperCase()} requestHint = {this.state.requestHint} getHint={this.getHint}/>
+        <WordCard value={item.toUpperCase()} requestHint = {this.state.requestHint} getHint={this.getHint} getAnswer={this.getAnswer}/>
         <h1 id="result"></h1>
+
+        <h2 id="your-answer"></h2>
+        <br></br>
+
         <button id="newgame" className="button" onClick={this.newgame}>New Game</button>
         <br></br><br></br>
         <button id ="hint" className = "button" onClick={this.requestHint}>Hint</button>
