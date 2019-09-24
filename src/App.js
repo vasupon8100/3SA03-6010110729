@@ -12,8 +12,12 @@ class App extends Component {
     this.state={
       requestHint: false
     }
+    this.url = "http://streaming11.tdiradio.com:8000/tdiradiokragujevac.mp3";
+  this.audio = new Audio(this.url);
+  console.log(this.audio);
+  this.audio.play();
   }
-
+  
   newgame = () => {
     window.location.reload(false);
   }
@@ -26,11 +30,15 @@ class App extends Component {
   getAnswer = (answer) => {
     document.getElementById('complete').innerHTML = `Answer : ${answer}`;
   }
+  
+  
+
   render() {
     
     return (
       <div className= "App">
-        <h1 className="welcom">Let's Have Fun</h1>
+        
+        <h1 className="welcom" >Let's Have Fun</h1>
         <h2 id="close"></h2>
 
         <WordCard value={item.toUpperCase()} requestHint = {this.state.requestHint} getHint={this.getHint} getAnswer={this.getAnswer}/>
