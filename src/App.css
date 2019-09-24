@@ -49,12 +49,21 @@
     transform: rotate(360deg);
   }
 }
-body{
+
+/*body{
   background:url("https://cdn.pixabay.com/photo/2017/07/25/11/44/crumpled-2537807_1280.jpg");
   height: 1000px;
   background-size: cover;
   background-position: center;
 }
+*/
+body{
+  background :url(https://wallpapercave.com/wp/wp2757834.gif) ;
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+}
+
 .button:hover{
   background-color: rgb(3, 3, 3); 
   border: none;
@@ -69,3 +78,5 @@ body{
   transition-duration: 1s;
   cursor: pointer;
 }
+
+
